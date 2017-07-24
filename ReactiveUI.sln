@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlickrBrowser", "FlickrSearch\FlickrBrowser.csproj", "{6E6A99D9-C7C2-4284-8795-12BE2500C77E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReativeUI_GridView", "ReativeUI_GridView\ReativeUI_GridView.csproj", "{17E67264-D6BF-4BB6-B77A-FB3A3FF1FDEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E6A99D9-C7C2-4284-8795-12BE2500C77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6A99D9-C7C2-4284-8795-12BE2500C77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6A99D9-C7C2-4284-8795-12BE2500C77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6A99D9-C7C2-4284-8795-12BE2500C77E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E67264-D6BF-4BB6-B77A-FB3A3FF1FDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E67264-D6BF-4BB6-B77A-FB3A3FF1FDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E67264-D6BF-4BB6-B77A-FB3A3FF1FDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E67264-D6BF-4BB6-B77A-FB3A3FF1FDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
