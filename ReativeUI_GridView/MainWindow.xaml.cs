@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ReativeUI_GridView.Model;
 using ReativeUI_GridView.Service;
+using ReativeUI_GridView.ViewModel;
 
 namespace ReativeUI_GridView
 {

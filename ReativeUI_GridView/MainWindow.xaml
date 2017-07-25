@@ -15,6 +15,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <telerik:RadGridView NewRowPosition="Top" x:Name="GridView" ItemsSource="{Binding People}" />
+        <telerik:RadGridView NewRowPosition="Top" x:Name="GridView" ItemsSource="{Binding People, UpdateSourceTrigger=LostFocus}"  />
     </Grid>
 </Window>

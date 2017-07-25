@@ -1,7 +1,7 @@
 ﻿using ReactiveUI;
 using ReativeUI_GridView.Model;
 
-namespace ReativeUI_GridView.Auxiliary
+namespace ReativeUI_GridView.ViewModel
 {
     public class PersonViewModel : ReactiveObject
     {
@@ -15,6 +15,9 @@ namespace ReativeUI_GridView.Auxiliary
         }
 
         public Person Model { get { return _person;  } }
+
+
+        public string Uuid { get; set; } = System.Guid.NewGuid().ToString();
 
         public string FullName { get { return $"{_person.FirstName} {_person.LastName}"; } }
 
@@ -47,6 +50,8 @@ namespace ReativeUI_GridView.Auxiliary
                 this.RaisePropertyChanged();
             }
         }
+
+        public bool IsNew { get; set; } = true;
 
 
     }
