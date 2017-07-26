@@ -1,9 +1,10 @@
 ﻿using ReactiveUI;
 using ReativeUI_GridView.Model;
+using ReativeUI_GridView.Utilities;
 
 namespace ReativeUI_GridView.ViewModel
 {
-    public class PersonViewModel : ReactiveObject
+    public class PersonViewModel : ReactiveObject, IStatus
     {
         private Person _person;
 
@@ -15,9 +16,6 @@ namespace ReativeUI_GridView.ViewModel
         }
 
         public Person Model { get { return _person;  } }
-
-
-        public string Uuid { get; set; } = System.Guid.NewGuid().ToString();
 
         public string FullName { get { return $"{_person.FirstName} {_person.LastName}"; } }
 
@@ -52,6 +50,18 @@ namespace ReativeUI_GridView.ViewModel
         }
 
         public bool IsNew { get; set; } = true;
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            return obj.GetType() != this.GetType();
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
 
 
     }
